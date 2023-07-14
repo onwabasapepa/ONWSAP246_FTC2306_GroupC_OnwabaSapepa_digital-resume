@@ -35,7 +35,8 @@ nav{
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 0px;
-    background-color: rgba(16, 20, 20, 0.89);    
+    background-color: rgba(16, 20, 20, 0.89); 
+    position: sticky;   
 }
 .home-logo{
     border-radius: 50%;
