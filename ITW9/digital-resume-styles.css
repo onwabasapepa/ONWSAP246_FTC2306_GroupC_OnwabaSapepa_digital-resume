@@ -1,0 +1,172 @@
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    color: rgb(10, 10, 97);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(36, 0, 37);
+}
+h3{
+    
+    color: rgb(88, 0, 37);
+}
+
+h4{
+    text-align: center;
+    color: rgb(83, 83, 83);
+}
+header{
+    text-align: center;
+    background-color: rgb(20, 214, 133);
+    background-image: url(./ITW9\ Images/software-engineer.jpg);
+    background-blend-mode: lighten;
+    
+    
+}
+nav{
+    font-style: oblique;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 0px;
+    background-color: rgba(16, 20, 20, 0.89);    
+}
+.home-logo{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    .home-logo:hover{
+        transform: scale(1.0);
+        cursor: pointer;
+        color: darkorange;
+        transition: 2s;
+    }
+}
+body{
+    padding: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.submit{
+    background-color: rgb(55, 148, 78);
+    font-style: oblique;
+    color: white;
+    border-radius: 6px;
+    border-style: double;
+    padding: 5px;
+    border-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: purple;
+    transition: 2s;
+    transform: scale(1.3);
+    cursor: pointer;
+    background-color: rgba(2, 40, 0, 0);
+}
+.submit{
+    font-weight: bold;
+}
+.submit:hover{
+    transform: scale(1.2);
+    color: rgb(1, 71, 1);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.toggle-button{
+    cursor: pointer;
+    display: none;
+
+}
+
+
+@media (max-width: 500px){
+    .toggle-button{
+        display: block;
+        
+    }
+    nav ul li a{
+        display: none;
+    }
+}
+.nav{
+    flex-direction: column ;
+}
+.dropdown-menu{
+    position: absolute;
+    right: 1rem;
+    width: 200px;
+    height: 0;
+    background-color:rgba(16, 20, 20, 0.89);
+    overflow: hidden;
+    align-items: center;
+    padding-left:30px ;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu.open{
+    height: 240px;
+}
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.toggle-button:hover{
+    .dropdown-menu.open{
+        display: grid;
+    }
+}
+.contact-links ul li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 500px){
+    .profile{
+        width: 50px;
+        height: 50px
+    }
+}
+@media (max-width: 800px){
+    .profile{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+
+
+       
+    
+
